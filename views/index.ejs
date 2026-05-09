@@ -1,15 +1,54 @@
 <%- include("partials/header.ejs") %>
 
-    <section class="container-fluid">
-        <div class="row d-flex align-items-center">
-            <div class="col-md-6">
-                <h1>My Blog</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eius delectus repellat ipsam, aperiam
-                    voluptatum reiciendis dignissimos voluptatibus aspernatur laboriosam.</p>
+    <section class="container py-5">
+        <div class="row align-items-center g-5">
+
+            <!-- Left Content -->
+            <div class="col-lg-6">
+                <span class="badge bg-dark mb-3 px-3 py-2">
+                    Welcome to My Blog
+                </span>
+
+                <h1 class="display-3 fw-bold mb-4">
+                    Share Your Ideas With The World
+                </h1>
+
+                <p class="lead text-muted mb-4">
+                    Discover stories, insights, and creative thoughts from passionate writers.
+                    Create, edit, and manage your own blog posts with ease.
+                </p>
+
+                <div class="d-flex gap-3">
+                    <a href="/posts/new" class="btn btn-primary btn-lg px-4">
+                        Create Post
+                    </a>
+
+                    <a href="#posts" class="btn btn-outline-dark btn-lg px-4">
+                        Explore Posts
+                    </a>
+                </div>
             </div>
-            <div class="col-md-6">
-                <img class="img-fluid rounded" src="https://picsum.photos/720" alt="random image">
+
+            <!-- Right Image -->
+            <div class="col-lg-6">
+                <div class="position-relative">
+
+                    <img class="img-fluid rounded-4 shadow-lg" src="https://picsum.photos/720/500"
+                        alt="Blog Hero Image">
+
+                    <!-- Floating Card -->
+                    <div class="card shadow border-0 position-absolute bottom-0 start-0 translate-middle-y ms-4 p-3">
+                        <div class="card-body p-2">
+                            <h5 class="fw-bold mb-1">Creative Blogging</h5>
+                            <p class="text-muted small mb-0">
+                                Write and manage posts beautifully.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+
         </div>
     </section>
 
